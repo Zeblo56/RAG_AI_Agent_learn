@@ -87,7 +87,7 @@ base_chain = prompt | print_prompt | model |str_parser
 
 
 def get_history(session_id):
-    return FileChatMessageHistory(session_id, '../chat_history')
+    return FileChatMessageHistory(session_id, './chat_history')
 
 #创建一个新的类，对原有的链增强功能，自动附加历史消息
 conversation_chain = RunnableWithMessageHistory(
